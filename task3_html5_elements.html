@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Elements - Lab Task 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML 5 Elements</h1>
+
+    <!-- HTML 5 color Element -->
+    <section>
+        <h2>HTML 5 color Element</h2>
+        <label for="colorPicker">Select your favorite color:</label>
+        <input type="color" id="colorPicker" value="#000000">
+        <button type="button">Submit</button>
+    </section>
+
+    <!-- HTML 5 input restriction as number -->
+    <section>
+        <h2>HTML 5 input restriction as number</h2>
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" min="1" max="5" value="5">
+        <button type="button">Send</button>
+    </section>
+
+    <!-- HTML 5 data Encryption -->
+    <section>
+        <h2>HTML 5 data Encryption</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" value="admin">
+
+        <label for="encryption">Encryption:</label>
+        <select id="encryption">
+            <option>2048 (High Grade)</option>
+            <option>1024 (Medium Grade)</option>
+            <option>512 (Low Grade)</option>
+        </select>
+        <button type="button">Submit</button>
+    </section>
+
+    <!-- HTML 5 date picker -->
+    <section>
+        <h2>HTML 5 date picker</h2>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" value="2014-10-01">
+        <button type="button">Send</button>
+    </section>
+
+    <!-- HTML 5 Audio Element -->
+    <section>
+        <h2>HTML 5 Audio Element</h2>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            <source src="audio.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- HTML 5 CANVAS (graphics and text) -->
+    <section>
+        <h2>HTML 5 CANVAS (graphics and text)</h2>
+        <canvas id="myCanvas" width="400" height="200"></canvas>
+    </section>
+
+    <script>
+        // Canvas drawing
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+
+        // Draw text
+        ctx.font = '30px Arial';
+        ctx.fillText('Hello World', 20, 50);
+
+        // Draw a rectangle border
+        ctx.strokeRect(10, 10, 380, 180);
+    </script>
+
+    <hr>
+    <footer>
+        <p><strong>Figure 4: HTML 5 Elements</strong></p>
+        <p><strong>11 || Department of Computer Software Engineering, University of Engg & Technology, Mardan</strong>
+        </p>
+    </footer>
+</body>
+
+</html>

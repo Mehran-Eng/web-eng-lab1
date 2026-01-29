@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists - Lab Task 1</title>
+</head>
+
+<body>
+    <h1>Lab task(s):</h1>
+
+    <h2>1. Create following web page using ordered lists, unordered lists and definition lists.</h2>
+
+    <!-- Ordered List with nested items -->
+    <ol>
+        <li>Chapter 1
+            <ol type="A">
+                <li>Introduction</li>
+                <li>HTML</li>
+            </ol>
+        </li>
+        <li>Chapter 2
+            <ol type="I">
+                <li>Tags</li>
+                <li>Lists
+                    <ul style="list-style-type: square;">
+                        <li>This is first item of the second item
+                            <ol type="1">
+                                <li>And this is a numbered subitem of first subitem</li>
+                            </ol>
+                        </li>
+                        <li>This is second item of the second item</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+    </ol>
+
+    <!-- Definition List -->
+    <dl>
+        <dt>Title 1</dt>
+        <dd>Definition 1</dd>
+
+        <dt>Title 2</dt>
+        <dd>Definition 2</dd>
+        <dd>Definition 3
+            <ul style="list-style-type: circle;">
+                <li>Unordered list item 1</li>
+                <li>Unordered list item 2</li>
+            </ul>
+        </dd>
+    </dl>
+
+    <!-- Continuing ordered list -->
+    <ol start="3">
+        <li>Chapter 3</li>
+    </ol>
+
+    <hr>
+    <p><strong>Figure 2: lists</strong></p>
+    <footer>
+        <p><strong>9 || Department of Computer Software Engineering, University of Engg & Technology, Mardan</strong>
+        </p>
+    </footer>
+</body>
+
+</html>

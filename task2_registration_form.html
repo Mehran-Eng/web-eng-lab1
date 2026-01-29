@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - Lab Task 2</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            margin: 20px auto;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        td:first-child {
+            text-align: right;
+            font-weight: bold;
+            width: 200px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th colspan="2">INFORMATION TABLE</th>
+        </tr>
+        <tr>
+            <td>NAME</td>
+            <td><input type="text" placeholder="ENTER YOUR FULL NAME"></td>
+        </tr>
+        <tr>
+            <td>EMAIL</td>
+            <td><input type="email" placeholder="ENTER AN INTERNET CONTACT ADDRESS"></td>
+        </tr>
+        <tr>
+            <td>PASSWORD</td>
+            <td><input type="password" placeholder="ENTER A CODE TO IDENTIFY YOU"></td>
+        </tr>
+        <tr>
+            <td>ADDRESS</td>
+            <td><input type="text" placeholder="ENTER COMPLETE ADDRESS"></td>
+        </tr>
+        <tr>
+            <td>COUNTRY</td>
+            <td>
+                <select>
+                    <option>Country</option>
+                    <option>Pakistan</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                    <option>Canada</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>GENDER</td>
+            <td>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td>HOBBIES</td>
+            <td>
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">Reading</label><br>
+                <input type="checkbox" id="music" name="hobbies" value="music">
+                <label for="music">Listening Music</label><br>
+                <input type="checkbox" id="gardening" name="hobbies" value="gardening">
+                <label for="gardening">Gardening</label><br>
+                <input type="checkbox" id="swimming" name="hobbies" value="swimming">
+                <label for="swimming">Swimming</label><br>
+                <input type="checkbox" id="athletics" name="hobbies" value="athletics">
+                <label for="athletics">Athletics</label><br>
+                <small>check all that apply</small>
+            </td>
+        </tr>
+        <tr>
+            <td>YOUR WEBSITE</td>
+            <td>
+                <input type="url" placeholder="http://" value="http://"><br>
+                <small>provide your website URL if exists (not necessary)</small>
+            </td>
+        </tr>
+        <tr>
+            <td>OTHER INFORMATION ABOUT YOU</td>
+            <td><textarea></textarea></td>
+        </tr>
+    </table>
+</body>
+
+</html>
